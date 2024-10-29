@@ -47,9 +47,7 @@ export default function Motivation() {
         <button
           onClick={() => handlePrev()}
           className={`h-10 w-10 rounded-full bg-black text-white ${
-            isFirst
-              ? "cursor-not-allowed opacity-60"
-              : "opacity-100"
+            isFirst ? "cursor-not-allowed opacity-60" : "opacity-100"
           } text-2xl flex items-center justify-center shrink-0`}
         >
           <IoIosArrowBack />
@@ -57,15 +55,13 @@ export default function Motivation() {
         <button
           onClick={() => handleNext()}
           className={`h-10 w-10 rounded-full bg-black text-white ${
-            isLast
-              ? "cursor-not-allowed opacity-60"
-              : "opacity-100"
+            isLast ? "cursor-not-allowed opacity-60" : "opacity-100"
           } text-2xl flex items-center justify-center shrink-0`}
         >
           <IoIosArrowForward />
         </button>
-    </div>
-          
+      </div>
+
       <div className="flex items-center gap-16 max-w-7xl mx-auto">
         <button
           onClick={() => handlePrev()}
@@ -132,24 +128,4 @@ export default function Motivation() {
   );
 }
 
-const TestimonialData = [
-  <span className="block"></span>,
-  <span>
-    In today’s fiercely competitive global marketplace, the most{" "}
-    <mark className="bg-rashad text-white">
-      important resource any business creative thinking of its own
-    </mark>
-  </span>,
-  <span>
-    In today’s fiercely competitive global marketplace, the most{" "}
-    <mark className="bg-rashad text-white">
-      important resource any business creative thinking of its own
-    </mark>
-  </span>,
-  <span>
-    In today’s fiercely competitive global marketplace, the most{" "}
-    <mark className="bg-rashad text-white">
-      important resource any business creative thinking of its own
-    </mark>
-  </span>,
-];
+const TestimonialData = ["", "", ""];
