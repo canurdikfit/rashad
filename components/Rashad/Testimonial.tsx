@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperClass, SwiperRef, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Parallax } from "swiper/modules";
@@ -31,7 +31,7 @@ export default function Testimonial() {
     }
   };
 
-  const onSlideChange = (swiper: any) => {
+  const onSlideChange = (swiper: SwiperClass) => {
     setActiveIndex(swiper.activeIndex);
     handleSlideByState({
       isFirst: swiper.isBeginning,

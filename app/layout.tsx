@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Rashad/Navbar";
 import Footer from "@/components/Rashad/Footer";
 
 const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const manRope = Manrope({
   subsets: ["latin"],
   display: "swap",
 });

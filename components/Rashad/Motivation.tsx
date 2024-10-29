@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperClass, SwiperRef, SwiperSlide } from "swiper/react";
 import { Parallax } from "swiper/modules";
 import "swiper/css/navigation";
 import "swiper/css";
@@ -28,7 +28,7 @@ export default function Motivation() {
     }
   };
 
-  const onSlideChange = (swiper: any) => {
+  const onSlideChange = (swiper: SwiperClass) => {
     handleSlideByState({
       isFirst: swiper.isBeginning,
       isLast: swiper.isEnd,
