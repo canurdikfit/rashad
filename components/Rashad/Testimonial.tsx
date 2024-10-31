@@ -75,7 +75,7 @@ export default function Testimonial() {
               <SwiperSlide key={index}>
                 <div className="max-w-xl lg:max-w-2xl mx-auto text-center text-balance">
                   <p className="text-lg md:text-2xl lg:text-3xl">
-                   "{items.message}"
+                    &quot;{items.message}&quot;
                   </p>
                 </div>
               </SwiperSlide>

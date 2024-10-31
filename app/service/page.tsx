@@ -5,7 +5,7 @@ export default function page() {
   return (
     <div className="h-screen flex items-center justify-center">
       <VelocityScroll
-        text="Comming Soon"
+        text="Coming Soon"
         default_velocity={5}
         className="font-display text-center text-4xl font-bold text-black drop-shadow-sm dark:text-white md:text-[150px] md:leading-[1.2]"
       />

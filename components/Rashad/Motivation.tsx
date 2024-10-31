@@ -97,7 +97,7 @@ export default function Motivation() {
                   className="text-lg md:text-4xl xl:text-[50px] font-semibold relative p-5"
                 >
                   <span className="xl:h-[63%] h-[62%] bg-rashad w-full left-0 bottom-0 absolute z-0" />
-                  {item}
+                  {item.label}
                 </h2>
                 <div className="mt-7">
                   <h3 className="text-xl md:text-2xl font-extrabold">
@@ -127,22 +127,35 @@ export default function Motivation() {
 }
 
 const TestimonialData = [
-  <span className="relative z-10 leading-[1.3]">
-    "The power to transform your life <br />
-    <mark className="bg-rashad text-white">
-      lies within you—every setback is a setup for a comeback."
-    </mark>
-  </span>,
-  <span className="relative z-10 leading-[1.3]">
-    "Resilience isn’t the absence of <br />
-    <mark className="bg-rashad text-white">
-      challenges; it’s the decision to rise above them every time."
-    </mark>
-  </span>,
-  <span className="relative z-10 leading-[1.3]">
-    "Growth happens when you stop <br />
-    <mark className="bg-rashad text-white">
-      fearing failure and start seeing it as a stepping stone to success."
-    </mark>
-  </span>,
+  {
+    label: (
+      <span className="relative z-10 leading-[1.3]">
+        &quot;The power to transform your life <br />
+        <mark className="bg-rashad text-white">
+          lies within you—every setback is a setup for a comeback.&quot;
+        </mark>
+      </span>
+    ),
+  },
+  {
+    label: (
+      <span className="relative z-10 leading-[1.3]">
+        &quot;Resilience isn’t the absence of <br />
+        <mark className="bg-rashad text-white">
+          challenges; it’s the decision to rise above them every time.&quot;
+        </mark>
+      </span>
+    ),
+  },
+  {
+    label: (
+      <span className="relative z-10 leading-[1.3]">
+        &quot;Growth happens when you stop <br />
+        <mark className="bg-rashad text-white">
+          fearing failure and start seeing it as a stepping stone to
+          success.&quot;
+        </mark>
+      </span>
+    ),
+  },
 ];
