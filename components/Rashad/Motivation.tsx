@@ -92,7 +92,10 @@ export default function Motivation() {
                   sizes="100%"
                   className="h-10 md:h-14 w-auto"
                 />
-                <h2 className="text-lg md:text-4xl xl:text-[50px] font-semibold relative p-5">
+                <h2
+                  key={index}
+                  className="text-lg md:text-4xl xl:text-[50px] font-semibold relative p-5"
+                >
                   <span className="xl:h-[63%] h-[62%] bg-rashad w-full left-0 bottom-0 absolute z-0" />
                   {item}
                 </h2>

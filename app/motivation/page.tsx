@@ -1,7 +1,7 @@
 "use client";
 import Motivation from "./../../assets/Motivational_Quote.png";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export default function page() {
   const MotivationQuotes = [
@@ -42,7 +42,7 @@ export default function page() {
     },
   ];
 
-  const [activeTab, setActiveTab] = React.useState<number>(0);
+  const [activeTab, setActiveTab] = useState<number>(0);
 
   return (
     <div className="xl:screen w-screen">
