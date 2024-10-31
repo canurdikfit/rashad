@@ -60,7 +60,7 @@ export default function Audience() {
               src={Rashad}
               alt="Rashad"
               sizes="100%"
-              className="h-full w-auto"
+              className="h-full w-auto object-contain object-center"
             />
           </div>
         </div>

@@ -71,43 +71,15 @@ export default function Testimonial() {
             centeredSlides
             modules={[Parallax]}
           >
-            <SwiperSlide>
-              <div className="max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto text-center text-balance">
-                <p className="text-lg md:text-2xl lg:text-3xl">
-                  «When applied to building block a website or similar work
-                  product, a Visual Guide can be an intermediate step toward the
-                  end goal of a complete website. By creating a visual guide
-                  along the way, the designer or developer can get input from
-                  the other people involved in the website such as the customer,
-                  their manager, and other members of the team.»
-                </p>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className="max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto text-center text-balance">
-                <p className="text-lg md:text-2xl lg:text-3xl">
-                  «When applied to building block a website or similar work
-                  product, a Visual Guide can be an intermediate step toward the
-                  end goal of a complete website. By creating a visual guide
-                  along the way, the designer or developer can get input from
-                  the other people involved in the website such as the customer,
-                  their manager, and other members of the team.»
-                </p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="max-w-xl lg:max-w-2xl xl:max-w-3xl mx-auto text-center text-balance">
-                <p className="text-lg md:text-2xl lg:text-3xl">
-                  «When applied to building block a website or similar work
-                  product, a Visual Guide can be an intermediate step toward the
-                  end goal of a complete website. By creating a visual guide
-                  along the way, the designer or developer can get input from
-                  the other people involved in the website such as the customer,
-                  their manager, and other members of the team.»
-                </p>
-              </div>
-            </SwiperSlide>
+            {Client.map((items, index) => (
+              <SwiperSlide key={index}>
+                <div className="max-w-xl lg:max-w-2xl mx-auto text-center text-balance">
+                  <p className="text-lg md:text-2xl lg:text-3xl">
+                   "{items.message}"
+                  </p>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         )}
         <button
@@ -180,18 +152,24 @@ export default function Testimonial() {
 
 const Client = [
   {
-    label: "Cha Ji-Hun",
-    position: "Co-founder of Forpeople",
+    label: "Lisa",
+    position: "Team lead",
     profile: Chaji,
+    message:
+      "Rashad has a unique way of breaking down complex issues, helping our team find clarity and inspiration to move forward. We’re now more motivated and aligned than ever.",
   },
   {
-    label: "Rutherford Brannan",
-    position: "Design director of Perfect Illustration",
+    label: "David",
+    position: "Conference attendee",
     profile: Rutherford,
+    message:
+      "I came to Rashad’s event with a lot of self-doubt, but he taught me how to recognize my strengths and use them. I walked away with a new sense of purpose and actionable steps to reach my goals.",
   },
   {
-    label: "Henry Itondo",
-    position: "Co-founder of Source DS",
+    label: "Chris",
+    position: "Workshop participant",
     profile: Henry,
+    message:
+      "Hearing Rashad speak was a game-changer for me. His words encouraged me to take that leap of faith in my career, and I’m already seeing the positive impact. He helped me believe in my potential.",
   },
 ];

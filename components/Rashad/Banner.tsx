@@ -1,5 +1,6 @@
 import BannerImage from "./../../assets/Banner_Image.png";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Banner() {
@@ -24,9 +25,13 @@ export default function Banner() {
           Unlock your potential with Rashad Aldridge, motivational speaker and
           life strategist.
         </p>
-        <button className="py-5 lg:py-6 px-8 rounded-full bg-white text-black text-xl font-medium hover:bg-rashad transition-colors ease-linear duration-200 hover:text-white">
-          Start now
-        </button>
+        <div>
+          <Link href={"#followRashad"}>
+            <button className="py-5 lg:py-6 px-8 rounded-full bg-white text-black text-xl font-medium hover:bg-rashad transition-colors ease-linear duration-200 hover:text-white">
+              Start now
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );

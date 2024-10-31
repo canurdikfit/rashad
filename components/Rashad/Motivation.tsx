@@ -82,8 +82,9 @@ export default function Motivation() {
             slidesPerView={1}
             centeredSlides
             modules={[Parallax]}
+            className="max-w-4xl"
           >
-            {TestimonialData.map((_, index) => (
+            {TestimonialData.map((item, index) => (
               <SwiperSlide key={index}>
                 <Image
                   src={Quote}
@@ -91,15 +92,9 @@ export default function Motivation() {
                   sizes="100%"
                   className="h-10 md:h-14 w-auto"
                 />
-                <h2 className="text-2xl md:text-5xl xl:text-6xl font-semibold relative p-5">
-                  <span className="h-1/2 bg-rashad w-full left-0 bottom-0 absolute z-0" />
-                  <span className="relative z-10 leading-[1.3]">
-                    In today’s fiercely competitive global marketplace, the most{" "}
-                    <mark className="bg-rashad text-white">
-                      important resource any business creative thinking of its
-                      own
-                    </mark>
-                  </span>
+                <h2 className="text-lg md:text-4xl xl:text-[50px] font-semibold relative p-5">
+                  <span className="xl:h-[63%] h-[62%] bg-rashad w-full left-0 bottom-0 absolute z-0" />
+                  {item}
                 </h2>
                 <div className="mt-7">
                   <h3 className="text-xl md:text-2xl font-extrabold">
@@ -128,4 +123,23 @@ export default function Motivation() {
   );
 }
 
-const TestimonialData = ["", "", ""];
+const TestimonialData = [
+  <span className="relative z-10 leading-[1.3]">
+    "The power to transform your life <br />
+    <mark className="bg-rashad text-white">
+      lies within you—every setback is a setup for a comeback."
+    </mark>
+  </span>,
+  <span className="relative z-10 leading-[1.3]">
+    "Resilience isn’t the absence of <br />
+    <mark className="bg-rashad text-white">
+      challenges; it’s the decision to rise above them every time."
+    </mark>
+  </span>,
+  <span className="relative z-10 leading-[1.3]">
+    "Growth happens when you stop <br />
+    <mark className="bg-rashad text-white">
+      fearing failure and start seeing it as a stepping stone to success."
+    </mark>
+  </span>,
+];

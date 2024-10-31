@@ -16,9 +16,8 @@ export default function Transformation() {
   return (
     <section className="space-y-10 py-20">
       <h3 className="max-w-5xl mx-auto text-3xl md:text-4xl xl:text-6xl xl:leading-[1.2] font-semibold text-center">
-              The <mark className="bg-rashad text-white px-2">transformation
-              </mark> happens at all levels of life and
-        society
+        The <mark className="bg-rashad text-white px-2">transformation</mark>{" "}
+        happens at all levels of life and society
       </h3>
       <div className="grid md:grid-cols-3 gap-6 xl:gap-10">
         {Data.map((item, index) => (
@@ -31,7 +30,7 @@ export default function Transformation() {
         ))}
       </div>
       <div className="flex items-center justify-center">
-        <Link href={""}>
+        <Link href={"#followRashad"}>
           <button className="bg-rashad py-5 flex items-center gap-5 text-white text-base pl-12 pr-7 rounded-full">
             <p className="font-extrabold">Follow Rashad</p>
             <FaLongArrowAltRight />

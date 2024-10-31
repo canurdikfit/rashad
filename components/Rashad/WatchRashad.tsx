@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function WatchRashad() {
   return (
-    <div className="py-20 text-white bg-black">
+    <div id="followRashad" className="py-20 text-white bg-black">
       <div className="space-y-7">
         <h4 className="text-center text-4xl md:text-6xl font-semibold ">
           Watch Rashad on <br /> youtube
@@ -113,9 +113,11 @@ export default function WatchRashad() {
       </div>
 
       <div className="flex items-center justify-center">
-        <button className="py-6 px-16 rounded-full bg-white text-black text-xl font-semibold hover:bg-rashad transition-colors ease-linear duration-200 hover:text-white">
-          Go to youtube
-        </button>
+        <Link href={"https://www.youtube.com/@RashadaldridgeMotivation"}>
+          <button className="py-6 px-16 rounded-full bg-white text-black text-xl font-semibold hover:bg-rashad transition-colors ease-linear duration-200 hover:text-white">
+            Go to youtube
+          </button>
+        </Link>
       </div>
     </div>
   );

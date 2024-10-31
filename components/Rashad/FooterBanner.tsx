@@ -15,7 +15,7 @@ export default function FooterBanner() {
           will give you everything you need in order to achieve your goals.{" "}
         </p>
         <div>
-          <Link href={""}>
+          <Link href={"#followRashad"}>
             <button className="bg-rashad py-4 flex items-center gap-5 text-white text-base px-16 rounded-full">
               <p className="font-semibold">Start Now</p>
             </button>
